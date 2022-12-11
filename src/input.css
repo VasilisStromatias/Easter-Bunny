@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	body {
+		@apply font-lato;
+	}
+}
+
+@layer components {
+    .after-banner{
+        @apply bg-after-banner py-fluid-30
+    }
+
+    .after-banner-wrapper{
+        @apply max-w-[700px] m-center w-[97%] px-[10px] text-center 
+    }
+
+    .categories{
+        @apply bg-categories py-fluid-30 text-center
+    }
+
+    .categories-header-wrapper{
+        @apply max-w-[700px] m-center w-[97%] px-[10px] text-center text-black
+    }
+    .categories-grid-wrapper{
+        @apply max-w-[1786px] m-center w-[97%] px-[10px] 
+    }
+    .categories-grid-inner{
+        @apply grid grid-cols-auto-fill-320 gap-x-[20px] lg:flex flex-wrap flex-row justify-between items-end gap-y-[20px]
+    }
+
+    .item-wrapper{
+        @apply p-[20px] relative
+    }
+
+    .item{
+        @apply col-span-1 sm:last:col-span-2 min-h-full
+    }
+
+    .item-title{
+        @apply text-white text-left font-bold lg:text-fluid-33
+    }
+
+    .item-image{
+        @apply m-center py-[10px] h-[310px] object-contain lg:h-auto
+    }
+
+    .item-price{
+        @apply text-white  text-right font-bold bottom-[10px] right-[20px] static lg:absolute text-fluid-43
+    }
+
+    .manufacturers-wrapper{
+        @apply py-[40px]
+    }
+
+
+    .manufacturers-grid-wrapper{
+        @apply max-w-[1786px] px-[10px] w-[97%] m-center
+    }
+
+    .manufacturers-grid-inner{
+        @apply grid grid-cols-auto-fill-270 gap-[20px]
+    }
+
+    .manufacturers-grid-item-wrapper{
+        @apply flex justify-center items-center max-h-[100px]
+    }
+
+    .manufacturers-item-image{
+        @apply m-center p-[10px] object-contain max-h-[85px]
+    }
+
+
+    .after-manufactuters{
+        @apply bg-after-manufacturers py-[20px]
+    }
+
+    .after-manufacturers-wrapper{
+        @apply max-w-[1290px] px-[10px] w-[97%] m-center 
+    }
+
+    .after-manufacturers-grid{
+        @apply flex justify-center flex-wrap items-end gap-x-[50px] gap-y-[20px] lg:justify-between py-[30px]
+    }
+
+    .after-manufacturers-item{
+        @apply relative 
+    }
+
+    .after-manufacturers-image{
+        @apply max-w-full m-center
+    }
+
+    .after-manufacturers-content{
+        @apply bg-after-manufacturers-item min-w-[270px] text-center
+    }
+
+    .hot-categories{
+        @apply bg-hot-categories
+    }
+
+    .hot-wrapper{
+        @apply max-w-[1294px] px-[10px] w-[97%] m-center
+    }
+
+    .hot-grid-wrapper{
+        @apply  grid grid-cols-auto-fill-265 gap-x-[75px] items-end translate-y-[-70px]
+    }
+
+    .hot-item{
+        @apply relative 
+    }
+
+    .hot-image{
+        @apply max-w-full m-center translate-y-[50%]
+    }
+
+    .hot-content{
+        @apply flex justify-center items-end  text-center 
+        before:content-[""] h-[218px] bg-hot-categories-item 
+    }
+
+    .topic-one{
+        @apply bg-topic-one py-[60px]
+    }
+
+    .topic-one-content{
+        @apply inline-block text-white max-w-[680px] mb-[20px] text-left md:mb-0
+    }
+
+    .topic-one-wrapper{
+        @apply max-w-[1672px] px-[10px] w-[97%] m-center
+    }
+
+    .topic-one-inner{
+        @apply inline-block md:flex justify-between items-center 
+    }
+
+    .topic-one-image{
+        @apply ml-[30px]
+    }
+
+     .topic-two{
+        @apply bg-topic-two py-[60px]
+    }
+
+    .footer{
+        @apply bg-footer pt-[30px] pb-[50px] md:pb-[180px]
+    }
+
+    .footer-wrapper{
+        @apply max-w-[1604px] px-[10px] w-[97%] m-center
+
+    }
+
+    .footer-grid{
+        @apply grid grid-cols-auto-fill-470 gap-[20px] items-end pt-[75px]
+
+    }
+
+    .footer-item-image{
+        @apply pb-[40px]
+    }
+
+    .footer-item-image img{
+        @apply max-w-full m-center
+    }
+
+    .footer-item-content{
+        @apply text-black text-center
+    }
+
+    .footer-item-content h3{
+        @apply text-fluid-31 font-bold
+    }
+    .footer-item-content p{
+        @apply text-fluid-31 
+    }
+}
